@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CV</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      background-color: 	;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-header {
+      font-size: 20px;
+      font-weight: bold;
+		color:#856855;
+    }
+
+    .section-content {
+      font-size: 16px;
+	  padding-left: 20px; 
+    }
+	
+	#myBar {
+	  width: 10%;
+	  height: 30px;
+	  background-color: #04AA6D;
+	  text-align: center; 
+	  line-height: 30px; 
+	  color: white;
+	}
+	
+	* {box-sizing: border-box}
+
+	.container {
+	  width: 100%;
+	  background-color: #ddd;
+	}
+
+	.skills {
+	  text-align: right;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  color: white;
+	}
+
+	.ing {width: 80%; background-color: #04AA6D;}
+	.ind {width: 85%; background-color: #2196F3;}
+	.jawa {width: 40%; background-color: #f44336;}
+	.mandarin {width: 70%; background-color: #964B00;}
+	.hokkien {width: 60%; background-color: #FFFF00;}
+  </style>
+  
+</head>
+<body>
+	
+		<video controls width="560" height="315">
+		<source src="https://youtu.be/C9jSNgFBh6A" type="video/mp4">
+	  </video>
+
+  <div class="section">
+    <div class="section-header">Data Pribadi</div>
+    <div class="section-content">
+      <li>Nama:						Louis Lie</li>
+	  <li>Tempat,Tanggal Lahir:		Medan, 8 Juni 2004</li>
+	  <li>Alamat:					學府路79號</li>
+	  <li>Jenis Kelamin:			Laki laki</li>
+	  <li>Kewarga Negaraan:			Indonesia</li>
+	  <li>Status:					Belum Menikah </li>
+	  </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Pendidikan</div>
+    <div class="section-content">
+      <li>Bachelor of Science in Computer Science, National Chung Hsing University, 2026</li>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Skills</div>
+    <div class="section-content">
+        <li>C Language</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>JS</li>
+        <li>CSS</li>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">Penguasaan Bahasa</div>
+    <div class="section-content">
+      <ul>
+	  <p><b>Bahasa Mandarin</p>
+		<div class="container">
+		  <div class="skills mandarin">70%</div>
+		</div>
+
+		<p>Bahasa Inggris</p>
+		<div class="container">
+		  <div class="skills ing">80%</div>
+		</div>
+
+		<p>Bahasa Indonesia</p>
+		<div class="container">
+		  <div class="skills ind">85%</div>
+		</div>
+
+		<p>Bahasa Jawa</p>
+		<div class="container">
+		  <div class="skills jawa">40%</div>
+		</div>
+
+		<p>Bahasa Hokkien</b></p>
+		<div class="container">
+		  <div class="skills hokkien">60%</div>
+		</div>
+      </ul>
+    </div>
+  </div>
+  
+		
+
+
+
+	<script>
+	var i = 0;
+	function move() {
+	  if (i == 0) {
+		i = 1;
+		var elem = document.getElementById("myBar");
+		var width = 10;
+		var id = setInterval(frame, 10);
+		function frame() {
+		  if (width >= 100) {
+			clearInterval(id);
+			i = 0;
+		  } else {
+			width++;
+			elem.style.width = width + "%";
+			elem.innerHTML = width  + "%";
+		  }
+		}
+	  }
+	}
+</script>
+</body>
+</html>
